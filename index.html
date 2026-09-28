@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>भारत उत्कर्ष महायज्ञ — पंजीकरण</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{
+  --saffron:#DE7C22; --maroon:#7A2418; --maroon-dk:#571707; --cream:#FBF4E5; --paper:#FFFDF8;
+  --gold:#C89A3C; --ink:#3A2415; --muted:#8A6F55; --green:#2F7D4F; --green-bg:#E7F3EA;
+  --red:#B3261E; --red-bg:#FBEAE8; --amber:#B8860B; --amber-bg:#FCF2DC; --line:#E7D9BE;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-family:'Noto Sans Devanagari',sans-serif;}
+h1,h2,h3,.serif{font-family:'Noto Serif Devanagari',serif;}
+img{max-width:100%}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px;}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;border-radius:10px;padding:13px 22px;font-size:16px;font-weight:600;transition:transform .12s ease;}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:linear-gradient(135deg,var(--saffron),var(--maroon));color:#fff;box-shadow:0 4px 14px rgba(122,36,24,.25);}
+.btn-outline{background:#fff;color:var(--maroon);border:2px solid var(--maroon);}
+.btn-green{background:var(--green);color:#fff;}
+.btn-ghost{background:transparent;color:var(--maroon);text-decoration:underline;padding:8px 4px;}
+.btn-block{width:100%}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 2px 10px rgba(122,36,24,.05);}
+.muted{color:var(--muted);font-size:14px}
+.field{margin-bottom:16px}
+.field label{display:block;font-weight:600;margin-bottom:6px;font-size:15px}
+.field .req{color:var(--red)}
+.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:10px;font-size:16px;font-family:inherit;background:#fff;color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--saffron);border-color:var(--saffron)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.row2{grid-template-columns:1fr}}
+nav.top{background:linear-gradient(135deg,var(--saffron),var(--maroon-dk));color:#fff;position:sticky;top:0;z-index:20;}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;}
+nav.top .brand{font-weight:700;font-size:17px;display:flex;gap:8px;align-items:center}
+nav.top .links a{font-size:14px;opacity:.92;margin-left:16px;text-decoration:none;cursor:pointer}
+.hero{background:radial-gradient(circle at 20% 20%,#E9915A 0,transparent 55%),linear-gradient(135deg,var(--saffron) 0%,var(--maroon) 65%,var(--maroon-dk) 100%);color:#fff;border-radius:0 0 28px 28px;padding:38px 16px 46px;text-align:center;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"॥";position:absolute;font-size:120px;opacity:.08;font-family:serif}
+.hero:before{left:-10px;top:-20px}.hero:after{right:-10px;bottom:-30px}
+.hero .tag{font-size:22px;margin-bottom:2px}
+.hero h1{font-size:clamp(28px,7vw,44px);margin:6px 0 14px;text-shadow:0 2px 18px rgba(0,0,0,.25)}
+.hero .sub{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:9px 18px;border-radius:30px;font-size:14px}
+.hero .kundcount{margin-top:22px;display:inline-flex;gap:10px;align-items:baseline;background:rgba(255,255,255,.12);padding:10px 22px;border-radius:14px}
+.hero .kundcount b{font-size:30px}
+.hero .cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section.sec{padding:34px 0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:640px){.grid3{grid-template-columns:1fr}}
+.info-card{text-align:center;padding:18px}
+.info-card .ic{font-size:28px}
+.kundlegend{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;margin:12px 0 18px}
+.kundlegend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:11px;height:11px;border-radius:50%;display:inline-block}
+.dot.a{background:var(--green)}.dot.r{background:var(--amber)}.dot.b{background:var(--red)}
+.kgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:6px;max-height:360px;overflow-y:auto;padding:10px;border:1px solid var(--line);border-radius:12px;background:#fffaf0}
+.kcell{aspect-ratio:1;border-radius:8px;border:none;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;color:#fff}
+.kcell.a{background:var(--green)}
+.kcell.r{background:var(--amber);color:#3a2b00}
+.kcell.b{background:var(--red);opacity:.75;cursor:not-allowed}
+.kcell.sel{outline:3px solid var(--maroon);box-shadow:0 0 0 2px #fff inset}
+.steps{display:flex;gap:0;margin-bottom:22px;font-size:13px;color:var(--muted)}
+.steps .st{flex:1;text-align:center;padding-bottom:8px;border-bottom:3px solid var(--line);font-weight:600}
+.steps .st.on{color:var(--maroon);border-color:var(--maroon)}
+.summary-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.summary-row b{font-weight:700}
+.total{font-size:22px;color:var(--maroon);font-weight:800}
+.badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:700}
+.badge.ok{background:var(--green-bg);color:var(--green)}
+.badge.pend{background:var(--amber-bg);color:var(--amber)}
+.badge.no{background:var(--red-bg);color:var(--red)}
+.tokenbox{border:3px double var(--gold);border-radius:16px;padding:24px;background:#fffdf6;text-align:center}
+.tokennum{font-size:26px;letter-spacing:1px;font-weight:800;color:var(--maroon);font-family:monospace,monospace;margin:6px 0 16px}
+.receipt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;text-align:left;font-size:14.5px;margin:18px 0}
+.receipt-grid .k{color:var(--muted)}
+footer.site{background:var(--maroon-dk);color:#f5e3c9;padding:26px 16px;margin-top:20px;font-size:14px;text-align:center}
+.tabs{display:flex;gap:8px;overflow-x:auto;margin-bottom:18px;border-bottom:2px solid var(--line)}
+.tabs button{background:none;border:none;padding:10px 14px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;white-space:nowrap}
+.tabs button.on{color:var(--maroon);border-color:var(--maroon)}
+.stat{background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+.stat b{display:block;font-size:24px;color:var(--maroon)}
+.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:640px){.statgrid{grid-template-columns:repeat(2,1fr)}}
+table.adm{width:100%;border-collapse:collapse;font-size:14px}
+table.adm th,table.adm td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:right}
+table.adm th{color:var(--muted);text-align:right;font-size:13px}
+table.adm td:first-child,table.adm th:first-child{text-align:right}
+.hidden{display:none!important}
+.msg{padding:12px 14px;border-radius:10px;font-size:14px;margin-bottom:14px}
+.msg.ok{background:var(--green-bg);color:var(--green)}
+.msg.err{background:var(--red-bg);color:var(--red)}
+.center{text-align:center}
+.spinner{width:34px;height:34px;border:4px solid var(--line);border-top-color:var(--maroon);border-radius:50%;animation:sp 0.8s linear infinite;margin:20px auto}
+@keyframes sp{to{transform:rotate(360deg)}}
+.qr-pay-box{background:#fff;border:2px dashed var(--gold);padding:16px;border-radius:12px;text-align:center;margin:16px 0;}
+@media print{
+  nav.top,footer.site,.no-print{display:none!important}
+  body{background:#fff}
+  .card{box-shadow:none;border:1px solid #999}
+}
+</style>
+</head>
+<body>
+
+<nav class="top no-print">
+  <div class="wrap">
+    <div class="brand">🪔 <span>भारत उत्कर्ष महायज्ञ</span></div>
+    <div class="links">
+      <a onclick="go('home')">मुख्य पृष्ठ</a>
+      <a onclick="go('search')">पंजीकरण खोजें</a>
+      <a onclick="go('adminGate')">एडमिन</a>
+    </div>
+  </div>
+</nav>
+
+<div id="app"></div>
+
+<footer class="site no-print">
+  <div>🕉️ भारत उत्कर्ष महायज्ञ — "राष्ट्र की समृद्धि में आपकी समृद्धि"</div>
+  <div class="muted" style="margin-top:6px;color:#e3c99a">सहायता हेतु संपर्क करें: कार्यालय, रामलीला मैदान, महर्षि आश्रम, महर्षि नगर, नोएडा 201304</div>
+</footer>
+
+<script>
+/* ===================== डेटा परत ===================== */
+const TOTAL_KUNDS = 108; // 108 कुण्ड
+const STORE_KEY='buhm_v3_108kunds_2026';
+
+function loadStore(){
+  let s = JSON.parse(localStorage.getItem(STORE_KEY)||'null');
+  if(!s){
+    // 1 से 9 तक के कुण्ड हमेशा के लिए रिजर्व्ड / बुक रहेंगे
+    const kunds = Array.from({length:TOTAL_KUNDS},(_,i)=>{
+      const num = i + 1;
+      return {
+        number: num,
+        status: num <= 9 ? 'booked' : 'available',
+        regId: num <= 9 ? 'RESERVED_PERMANENT' : null,
+        reservedAt: null
+      };
+    });
+    s = {kunds, registrations:{}, counter:0, config:{feePerPerson:1100, feeCouple:2100, adminPass:'admin123'}};
+    localStorage.setItem(STORE_KEY, JSON.stringify(s));
+  }
+  return s;
+}
+function saveStore(s){ localStorage.setItem(STORE_KEY, JSON.stringify(s)); }
+function releaseStale(s){
+  const now=Date.now();
+  s.kunds.forEach(k=>{
+    if(k.status==='reserved' && k.reservedAt && now-k.reservedAt>15*60*1000){
+      k.status='available'; k.regId=null; k.reservedAt=null;
+    }
+  });
+  saveStore(s);
+}
+let store = loadStore(); releaseStale(store);
+
+/* ===================== राउटर ===================== */
+let session = { form:null, kund:null, lastReg:null, admin:false };
+function go(view, data){ location.hash = view; render(view, data); window.scrollTo(0,0); }
+window.addEventListener('hashchange', ()=>render(location.hash.replace('#','')||'home'));
+
+const app = document.getElementById('app');
+function render(view){
+  store = loadStore(); releaseStale(store);
+  const v = view || 'home';
+  if(v==='home') return renderHome();
+  if(v==='register') return renderRegister();
+  if(v==='payment') return renderPayment();
+  if(v==='confirm') return renderConfirm();
+  if(v==='search') return renderSearch();
+  if(v==='adminGate') return renderAdminGate();
+  if(v==='admin') return session.admin ? renderAdmin() : renderAdminGate();
+  return renderHome();
+}
+render('home');
+
+/* ===================== होम पृष्ठ ===================== */
+function renderHome(){
+  const booked = store.kunds.filter(k=>k.status==='booked').length;
+  app.innerHTML = `
+  <div class="hero">
+    <div class="wrap">
+      <div class="tag">🌸 जय गुरुदेव 🌸</div>
+      <h1>भारत उत्कर्ष महायज्ञ</h1>
+      <div class="sub">"राष्ट्र की समृद्धि में आपकी समृद्धि" — 16 से 25 नवम्बर 2026</div>
+      <div class="kundcount">🔥 कुल अग्नि कुंड <b>१०८</b></div>
+      <div class="cta">
+        <button class="btn btn-primary" onclick="go('register')">पंजीकरण करें</button>
+        <button class="btn btn-outline" style="background:transparent;color:#fff;border-color:#fff" onclick="go('search')">अपना पंजीकरण देखें</button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <section class="sec">
+      <div class="card">
+        <h2 style="margin-top:0">महायज्ञ के विषय में</h2>
+        <p>श्री सिद्धेश्वर धाम महाराष्ट्र आश्रम द्वारा आयोजित <b>"भारत उत्कर्ष महायज्ञ"</b> एक दिव्य आध्यात्मिक अनुष्ठान है, जिसमें देश की समृद्धि, शांति एवं सर्वजन कल्याण हेतु १०८ अग्नि कुंडों में सम्पूर्ण विधि-विधान से यज्ञ सम्पन्न किया जाएगा।</p>
+        <div class="row2" style="margin-top:16px">
+          <div><b>📅 तिथि:</b> 16 से 25 नवम्बर 2026</div>
+          <div><b>📍 स्थान:</b> रामलीला मैदान, महर्षि आश्रम, महर्षि नगर, नोएडा 201304</div>
+        </div>
+      </div>
+    </section>
+    <section class="sec" style="padding-top:0">
+      <div class="grid3">
+        <div class="card info-card"><div class="ic">🔥</div><h3 style="margin:8px 0 2px">१०८</h3><div class="muted">कुल अग्नि कुंड</div></div>
+        <div class="card info-card"><div class="ic">🪔</div><h3 style="margin:8px 0 2px">${booked}</h3><div class="muted">आरक्षित/बुक कुंड</div></div>
+        <div class="card info-card"><div class="ic">🌺</div><h3 style="margin:8px 0 2px">${TOTAL_KUNDS-booked}</h3><div class="muted">उपलब्ध कुंड</div></div>
+      </div>
+    </section>
+    <section class="sec" style="padding-top:0">
+      <div class="card center">
+        <h2 style="margin-top:0">पंजीकरण की जानकारी</h2>
+        <p class="muted">अपनी पसंदीदा तिथि एवं समय चुनें, यजमान संख्या व अग्नि कुंड आरक्षित करें।</p>
+        <div style="margin-top:14px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+          <button class="btn btn-primary" onclick="go('register')">पंजीकरण करें</button>
+          <button class="btn btn-outline" onclick="go('search')">टोकन प्रिंट करें</button>
+        </div>
+      </div>
+    </section>
+  </div>`;
+}
+
+/* ===================== पंजीकरण फॉर्म ===================== */
+function renderRegister(){
+  const cfg = store.config;
+  app.innerHTML = `
+  <div class="wrap sec">
+    <div class="steps">
+      <div class="st on">१. जानकारी</div><div class="st">२. कुंड चयन</div><div class="st">३. भुगतान</div><div class="st">४. टोकन</div>
+    </div>
+    <div class="card">
+      <h2 style="margin-top:0">यजमान पंजीकरण</h2>
+      <div id="regMsg"></div>
+      
+      <div class="field"><label>पूरा नाम <span class="req">*</span></label><input id="f_name" placeholder="उदाहरण: राम प्रसाद शर्मा"></div>
+      <div class="row2">
+        <div class="field">
+          <label>मोबाइल नंबर <span class="req">*</span></label>
+          <input id="f_mobile" maxlength="10" placeholder="10 अंकों का मोबाइल नंबर" oninput="validateMobile(this)">
+        </div>
+        <div class="field"><label>ईमेल (वैकल्पिक)</label><input id="f_email" placeholder="you@example.com"></div>
+      </div>
+      <div class="field"><label>शहर / स्थान <span class="req">*</span></label><input id="f_city" placeholder="उदाहरण: नोएडा"></div>
+
+      <h3>तिथि एवं समय स्लॉट चयन</h3>
+      <div class="row2">
+        <div class="field">
+          <label>यज्ञ तिथि चुनें <span class="req">*</span></label>
+          <select id="f_date">
+            <option value="16 नवम्बर 2026">16 नवम्बर 2026</option>
+            <option value="17 नवम्बर 2026">17 नवम्बर 2026</option>
+            <option value="18 नवम्बर 2026">18 नवम्बर 2026</option>
+            <option value="19 नवम्बर 2026">19 नवम्बर 2026</option>
+            <option value="20 नवम्बर 2026">20 नवम्बर 2026</option>
+            <option value="21 नवम्बर 2026">21 नवम्बर 2026</option>
+            <option value="22 नवम्बर 2026">22 नवम्बर 2026</option>
+            <option value="23 नवम्बर 2026">23 नवम्बर 2026</option>
+            <option value="24 नवम्बर 2026">24 नवम्बर 2026</option>
+            <option value="25 नवम्बर 2026">25 नवम्बर 2026</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>समय स्लॉट <span class="req">*</span></label>
+          <select id="f_slot">
+            <option value="प्रातः सत्र (08:00 AM - 11:00 AM)">प्रातः सत्र (08:00 AM - 11:00 AM)</option>
+            <option value="अपराह्न सत्र (02:00 PM - 05:00 PM)">अपराह्न सत्र (02:00 PM - 05:00 PM)</option>
+            <option value="सायं सत्र (06:00 PM - 09:00 PM)">सायं सत्र (06:00 PM - 09:00 PM)</option>
+          </select>
+        </div>
+      </div>
+
+      <h3>यज्ञ में सहभागिता</h3>
+      <div class="field">
+        <label>सहभागिता प्रकार <span class="req">*</span></label>
+        <select id="f_type" onchange="onTypeChange()">
+          <option value="couple">दंपति (पति-पत्नी - अधिकतम 2)</option>
+          <option value="family">परिवार (1 से अधिकतम 6 व्यक्ति)</option>
+          <option value="group">अन्य समूह (1 से अधिकतम 10 व्यक्ति)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>प्रतिभागियों की संख्या <span class="req">*</span></label>
+        <input id="f_count" type="number" min="1" max="2" value="1" oninput="validateCount()">
+        <div class="muted" id="limitNote">अनुमत सीमा: 1 से 2 व्यक्ति</div>
+      </div>
+      <div class="field">
+        <div class="muted">पंजीकरण शुल्क (₹${cfg.feePerPerson}/व्यक्ति): <b id="feePreview" class="serif" style="color:var(--maroon);font-size:18px">₹${cfg.feePerPerson}</b></div>
+      </div>
+
+      <h3>अग्नि कुंड चयन (१०८ में से चुनें - १ से ९ वीआईपी/संरक्षित हैं)</h3>
+      <div class="kundlegend">
+        <span><span class="dot a"></span> उपलब्ध</span>
+        <span><span class="dot r"></span> अस्थायी रूप से आरक्षित</span>
+        <span><span class="dot b"></span> बुक / आरक्षित (1-9)</span>
+      </div>
+      <div class="kgrid" id="kgrid"></div>
+      <div class="field" style="margin-top:10px"><b>चयनित कुंड: </b><span id="selKundLabel">कोई नहीं</span></div>
+
+      <button class="btn btn-primary btn-block" onclick="submitRegister()">आगे बढ़ें — भुगतान करें</button>
+    </div>
+  </div>`;
+  buildKundGrid();
+}
+
+// केवल अंक (0-9) टाइप करने की अनुमति
+function validateMobile(input){
+  input.value = input.value.replace(/[^0-9]/g, '');
+}
+
+const TYPE_MAX = {couple:2, family:6, group:10};
+function onTypeChange(){
+  const t = document.getElementById('f_type').value;
+  const max = TYPE_MAX[t];
+  const cnt = document.getElementById('f_count');
+  cnt.max = max;
+  
+  // ऑटोमैटिक वैल्यू चेंज नहीं होगी, केवल मैक्सिमम चेक होगा
+  if(+cnt.value > max) {
+    cnt.value = max;
+  }
+  document.getElementById('limitNote').textContent = `अनुमत सीमा: 1 से ${max} व्यक्ति`;
+  updateFee();
+}
+
+function validateCount(){
+  const cnt = document.getElementById('f_count');
+  const max = +cnt.max || 10;
+  if(+cnt.value > max) cnt.value = max;
+  if(+cnt.value < 1 && cnt.value !== '') cnt.value = 1;
+  updateFee();
+}
+
+function updateFee(){
+  const cntVal = +document.getElementById('f_count').value || 1;
+  const type = document.getElementById('f_type').value;
+  const cfg = store.config;
+  const amount = (type==='couple' && cntVal===2) ? cfg.feeCouple : cntVal*cfg.feePerPerson;
+  document.getElementById('feePreview').textContent = '₹'+amount;
+}
+
+let selectedKund = null;
+function buildKundGrid(){
+  const g = document.getElementById('kgrid');
+  g.innerHTML = store.kunds.map(k=>{
+    const cls = k.status==='booked'?'b':(k.status==='reserved'?'r':'a');
+    const dis = k.status==='booked' ? 'disabled' : '';
+    return `<button class="kcell ${cls}" ${dis} data-n="${k.number}" onclick="selectKund(${k.number})">${String(k.number).padStart(3,'0')}</button>`;
+  }).join('');
+}
+
+function selectKund(n){
+  if(n <= 9) {
+    alert('कुंड 1 से 9 संरक्षित/बुक हैं। कृपया कुंड 10 या उसके बाद का कुंड चुनें।');
+    return;
+  }
+  const k = store.kunds.find(x=>x.number===n);
+  if(k.status==='booked') return;
+  if(k.status==='reserved' && !(selectedKund===n)) { alert('यह कुंड अस्थायी रूप से आरक्षित है, कृपया कुछ समय बाद प्रयास करें।'); return; }
+  document.querySelectorAll('.kcell.sel').forEach(e=>e.classList.remove('sel'));
+  selectedKund = n;
+  document.querySelector(`.kcell[data-n="${n}"]`).classList.add('sel');
+  document.getElementById('selKundLabel').textContent = 'कुंड संख्या ' + String(n).padStart(3,'0');
+}
+
+function submitRegister(){
+  const name=document.getElementById('f_name').value.trim();
+  const mobile=document.getElementById('f_mobile').value.trim();
+  const email=document.getElementById('f_email').value.trim();
+  const city=document.getElementById('f_city').value.trim();
+  const date=document.getElementById('f_date').value;
+  const slot=document.getElementById('f_slot').value;
+  const type=document.getElementById('f_type').value;
+  const count=+document.getElementById('f_count').value || 1;
+  const msg=document.getElementById('regMsg');
+
+  if(!name||!mobile||!city){ msg.innerHTML='<div class="msg err">कृपया सभी आवश्यक (*) फ़ील्ड भरें।</div>'; return; }
+  if(!/^[6-9]\d{9}$/.test(mobile)){ msg.innerHTML='<div class="msg err">कृपया मान्य 10 अंकों का मोबाइल नंबर दर्ज करें।</div>'; return; }
+  if(!selectedKund){ msg.innerHTML='<div class="msg err">कृपया एक अग्नि कुंड चुनें (10 से 108 के बीच)।</div>'; return; }
+
+  store = loadStore();
+  const k = store.kunds.find(x=>x.number===selectedKund);
+  if(!k || k.status==='booked'){ msg.innerHTML='<div class="msg err">क्षमा करें, यह कुंड उपलब्ध नहीं है। कृपया दूसरा कुंड चुनें।</div>'; buildKundGrid(); return; }
+
+  const cfg = store.config;
+  const amount = (type==='couple' && count===2) ? cfg.feeCouple : count*cfg.feePerPerson;
+
+  k.status='reserved'; k.reservedAt=Date.now();
+  saveStore(store);
+
+  session.form = {name,mobile,email,city,date,slot,type,count,amount,kund:selectedKund};
+  buildKundGrid();
+  go('payment');
+}
+
+/* ===================== भुगतान एवं UTR पृष्ठ ===================== */
+let screenshotBase64 = "";
+function renderPayment(){
+  const f = session.form;
+  if(!f){ go('register'); return; }
+  const typeLabel = {couple:'दंपति',family:'परिवार',group:'अन्य समूह'}[f.type];
+  const upiUrl = `upi://pay?pa=maharishivedvigyan@sbi&pn=MAHARISHI%20VEDVIGYAN%20SANSTHAN&am=${f.amount}&cu=INR`;
+  
+  app.innerHTML = `
+  <div class="wrap sec">
+    <div class="steps">
+      <div class="st">१. जानकारी</div><div class="st on">२. कुंड चयन</div><div class="st on">३. भुगतान</div><div class="st">४. टोकन</div>
+    </div>
+    <div class="card">
+      <h2 style="margin-top:0">भुगतान एवं सत्यापन विवरण</h2>
+      <div class="summary-row"><span>नाम</span><b>${f.name}</b></div>
+      <div class="summary-row"><span>मोबाइल नंबर</span><b>${f.mobile}</b></div>
+      <div class="summary-row"><span>यज्ञ तिथि</span><b>${f.date}</b></div>
+      <div class="summary-row"><span>समय स्लॉट</span><b>${f.slot}</b></div>
+      <div class="summary-row"><span>सहभागिता प्रकार</span><b>${typeLabel} (${f.count} व्यक्ति)</b></div>
+      <div class="summary-row"><span>चयनित अग्नि कुंड</span><b>कुंड ${String(f.kund).padStart(3,'0')}</b></div>
+      <div class="summary-row"><span>कुल राशि</span><b class="total">₹${f.amount}</b></div>
+
+      <div class="qr-pay-box">
+        <h3><b>MAHARISHI VEDVIGYAN SANSTHAN</b></h3>
+        <p style="margin:4px 0;font-weight:600">Scan & Pay via any UPI App</p>
+        <div id="paymentQr" style="display:flex;justify-content:center;margin:12px 0"></div>
+        <div><b>UPI ID:</b> <code style="font-size:16px;background:#f0e2cd;padding:2px 8px;border-radius:4px">maharishivedvigyan@sbi</code></div>
+      </div>
+
+      <div id="payMsg"></div>
+      
+      <h3>भुगतान पुष्टि हेतु विवरण दर्ज करें</h3>
+      <div class="field">
+        <label>UTR / UPI Transaction ID <span class="req">*</span></label>
+        <input id="f_utr" placeholder="12 अंकों का UTR / Transaction No. दर्ज करें">
+      </div>
+      <div class="field">
+        <label>भुगतान का स्क्रीनशॉट संलग्न करें (वैकल्पिक)</label>
+        <input type="file" id="f_ss" accept="image/*" onchange="handleScreenshot(event)">
+      </div>
+
+      <div id="payArea" style="margin-top:20px">
+        <button class="btn btn-primary btn-block" onclick="submitPaymentDetails()">भुगतान विवरण जमा करें एवं टोकन प्राप्त करें</button>
+        <button class="btn btn-ghost btn-block" onclick="cancelPayment()">रद्द करें</button>
+      </div>
+    </div>
+  </div>`;
+
+  new QRCode(document.getElementById('paymentQr'), {
+    text: upiUrl,
+    width: 180,
+    height: 180,
+    colorDark: "#000000",
+    colorLight: "#ffffff"
+  });
+}
+
+function handleScreenshot(e){
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = function(evt){ screenshotBase64 = evt.target.result; };
+  reader.readAsDataURL(file);
+}
+
+function cancelPayment(){
+  store = loadStore();
+  const k = store.kunds.find(x=>x.number===session.form.kund);
+  if(k && k.status==='reserved'){ k.status='available'; k.reservedAt=null; saveStore(store); }
+  session.form=null;
+  screenshotBase64="";
+  go('register');
+}
+
+function submitPaymentDetails(){
+  const utr = document.getElementById('f_utr').value.trim();
+  const msg = document.getElementById('payMsg');
+  if(!utr){
+    msg.innerHTML = '<div class="msg err">कृपया UTR / Transaction ID दर्ज करें।</div>';
+    return;
+  }
+
+  document.getElementById('payArea').innerHTML = `<div class="spinner"></div><p class="center muted">भुगतान की पुष्टि की जा रही है, टोकन जनरेट हो रहा है…</p>`;
+  
+  setTimeout(()=>{
+    store = loadStore();
+    const f = session.form;
+    const k = store.kunds.find(x=>x.number===f.kund);
+    if(!k || k.status==='booked'){
+      document.getElementById('payArea').innerHTML = `<div class="msg err">सत्यापन विफल: यह कुंड उपलब्ध नहीं है।</div><button class="btn btn-outline btn-block" onclick="go('register')">पुनः पंजीकरण करें</button>`;
+      return;
+    }
+    store.counter += 1;
+    const token = `BU-MY-2026-${String(store.counter).padStart(5,'0')}`;
+    const regId = 'REG' + Date.now();
+    const reg = {
+      regId, token, name:f.name, mobile:f.mobile, email:f.email, city:f.city,
+      date:f.date, slot:f.slot, type:f.type, count:f.count, kund:f.kund, amount:f.amount,
+      utr: utr, screenshot: screenshotBase64,
+      paymentStatus:'सत्यापित', verification:'लंबित', createdAt:new Date().toISOString()
+    };
+    store.registrations[regId] = reg;
+    k.status='booked'; k.regId=regId; k.reservedAt=null;
+    saveStore(store);
+    session.lastReg = regId; session.form=null; screenshotBase64="";
+    go('confirm');
+  }, 1200);
+}
+
+/* ===================== टोकन एवं प्रिंट पृष्ठ ===================== */
+function renderConfirm(){
+  store = loadStore();
+  const reg = store.registrations[session.lastReg];
+  if(!reg){ go('search'); return; }
+  const typeLabel = {couple:'दंपति',family:'परिवार',group:'अन्य समूह'}[reg.type];
+  app.innerHTML = `
+  <div class="wrap sec">
+    <div class="steps">
+      <div class="st on">१. जानकारी</div><div class="st on">२. कुंड चयन</div><div class="st on">३. भुगतान</div><div class="st on">४. टोकन</div>
+    </div>
+    <div class="card center" style="margin-bottom:18px">
+      <div style="font-size:40px">✅</div>
+      <h2 style="margin:6px 0 2px;color:var(--green)">पंजीकरण सफल!</h2>
+      <p class="muted">आपका टोकन जनरेट कर दिया गया है। कृपया इसे प्रिंट करें।</p>
+    </div>
+    <div class="card" id="printArea">
+      <div class="center serif" style="font-size:22px;color:var(--maroon);font-weight:700">भारत उत्कर्ष महायज्ञ 2026</div>
+      <div class="center muted" style="margin-bottom:14px">रामलीला मैदान, महर्षि नगर, नोएडा</div>
+      <div class="tokenbox">
+        <div class="muted">टोकन नंबर</div>
+        <div class="tokennum">${reg.token}</div>
+        <div id="qrHolder" style="display:flex;justify-content:center"></div>
+        <div class="muted" style="margin-top:10px;font-size:13px">इस टोकन को कार्यक्रम स्थल पर साथ लाएँ।</div>
+      </div>
+      <div class="receipt-grid">
+        <div><span class="k">पंजीकरण ID:</span> ${reg.regId}</div>
+        <div><span class="k">नाम:</span> ${reg.name}</div>
+        <div><span class="k">मोबाइल नंबर:</span> ${reg.mobile}</div>
+        <div><span class="k">यज्ञ तिथि:</span> ${reg.date}</div>
+        <div><span class="k">समय स्लॉट:</span> ${reg.slot}</div>
+        <div><span class="k">प्रतिभागी संख्या:</span> ${reg.count} (${typeLabel})</div>
+        <div><span class="k">अग्नि कुंड नंबर:</span> कुंड ${String(reg.kund).padStart(3,'0')}</div>
+        <div><span class="k">UTR No:</span> ${reg.utr}</div>
+      </div>
+    </div>
+    <div class="no-print" style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap">
+      <button class="btn btn-primary" onclick="window.print()">🖨️ टोकन प्रिंट करें</button>
+      <button class="btn btn-ghost" onclick="go('home')">मुख्य पृष्ठ पर जाएँ</button>
+    </div>
+  </div>`;
+  new QRCode(document.getElementById('qrHolder'), {text: reg.token+'|'+reg.regId, width:128, height:128, colorDark:'#571707', colorLight:'#fffdf6'});
+}
+
+/* ===================== खोज पृष्ठ ===================== */
+function renderSearch(){
+  app.innerHTML = `
+  <div class="wrap sec">
+    <div class="card">
+      <h2 style="margin-top:0">अपना पंजीकरण खोजें</h2>
+      <div class="field"><input id="s_query" placeholder="उदाहरण: 9876543210 या BU-MY-2026-00001"></div>
+      <button class="btn btn-primary btn-block" onclick="doSearch()">पंजीकरण खोजें</button>
+      <div id="s_result" style="margin-top:18px"></div>
+    </div>
+  </div>`;
+}
+function doSearch(){
+  const q = document.getElementById('s_query').value.trim().toLowerCase();
+  const res = document.getElementById('s_result');
+  if(!q){ res.innerHTML='<div class="msg err">कृपया मोबाइल नंबर या टोकन नंबर दर्ज करें।</div>'; return; }
+  store = loadStore();
+  const list = Object.values(store.registrations);
+  const found = list.find(r=> r.mobile===q || r.token.toLowerCase()===q || r.regId.toLowerCase()===q);
+  if(!found){ res.innerHTML='<div class="msg err">कोई पंजीकरण नहीं मिला।</div>'; return; }
+  session.lastReg = found.regId;
+  res.innerHTML = `<div class="msg ok">पंजीकरण मिल गया।</div>
+    <button class="btn btn-primary btn-block" onclick="go('confirm')">टोकन देखें / प्रिंट करें</button>`;
+}
+
+/* ===================== एडमिन ===================== */
+function renderAdminGate(){
+  app.innerHTML = `
+  <div class="wrap sec">
+    <div class="card" style="max-width:420px;margin:0 auto">
+      <h2>एडमिन लॉगिन</h2>
+      <div id="admMsg"></div>
+      <div class="field"><label>पासवर्ड</label><input id="a_pass" type="password" placeholder="admin123"></div>
+      <button class="btn btn-primary btn-block" onclick="adminLogin()">लॉगिन करें</button>
+    </div>
+  </div>`;
+}
+function adminLogin(){
+  const p = document.getElementById('a_pass').value;
+  store = loadStore();
+  if(p !== store.config.adminPass){ document.getElementById('admMsg').innerHTML='<div class="msg err">गलत पासवर्ड।</div>'; return; }
+  session.admin = true;
+  go('admin');
+}
+
+let admTab = 'overview';
+function renderAdmin(){
+  store = loadStore();
+  const kunds = store.kunds;
+  const booked = kunds.filter(k=>k.status==='booked').length;
+  const avail = TOTAL_KUNDS - booked;
+  const regs = Object.values(store.registrations);
+
+  app.innerHTML = `
+  <div class="wrap sec">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <h2>एडमिन पैनल 2026 (108 कुंड)</h2>
+      <button class="btn btn-ghost" onclick="session.admin=false; go('home')">लॉगआउट</button>
+    </div>
+    <div id="admBody">
+      <div class="statgrid">
+        <div class="stat"><b>१०८</b>कुल कुण्ड</div>
+        <div class="stat"><b>${booked}</b>बुक/संरक्षित कुण्ड</div>
+        <div class="stat"><b>${avail}</b>उपलब्ध कुण्ड</div>
+        <div class="stat"><b>${regs.length}</b>कुल पंजीकरण</div>
+      </div>
+    </div>
+  </div>`;
+}
+</script>
+</body>
+</html>

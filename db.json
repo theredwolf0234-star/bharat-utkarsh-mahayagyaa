@@ -1,0 +1,655 @@
+{
+  "kunds": [
+    {
+      "number": 1,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 2,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 3,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 4,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 5,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 6,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 7,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 8,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 9,
+      "status": "booked",
+      "regId": "RESERVED_PERMANENT",
+      "reservedAt": null
+    },
+    {
+      "number": 10,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 11,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 12,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 13,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 14,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 15,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 16,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 17,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 18,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 19,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 20,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 21,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 22,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 23,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 24,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 25,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 26,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 27,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 28,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 29,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 30,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 31,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 32,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 33,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 34,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 35,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 36,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 37,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 38,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 39,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 40,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 41,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 42,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 43,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 44,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 45,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 46,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 47,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 48,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 49,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 50,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 51,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 52,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 53,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 54,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 55,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 56,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 57,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 58,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 59,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 60,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 61,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 62,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 63,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 64,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 65,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 66,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 67,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 68,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 69,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 70,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 71,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 72,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 73,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 74,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 75,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 76,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 77,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 78,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 79,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 80,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 81,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 82,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 83,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 84,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 85,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 86,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 87,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 88,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 89,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 90,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 91,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 92,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 93,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 94,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 95,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 96,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 97,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 98,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 99,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 100,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 101,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 102,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 103,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 104,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 105,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 106,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 107,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    },
+    {
+      "number": 108,
+      "status": "available",
+      "regId": null,
+      "reservedAt": null
+    }
+  ],
+  "registrations": {},
+  "reservations": {},
+  "counter": 0
+}
