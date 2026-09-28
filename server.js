@@ -7,8 +7,8 @@ const cors=require('cors');
 const app=express();
 const PORT=process.env.PORT||3000;
 const ADMIN_PASSWORD=process.env.ADMIN_PASSWORD||'admin123';
-const DATA=path.join(__dirname,'..','data','db.json');
-const FRONT=path.join(__dirname,'..','frontend');
+const DATA = path.join(__dirname, 'db.json');
+const FRONT = __dirname;
 
 app.use(cors());
 app.use(express.json({limit:'1mb'}));
