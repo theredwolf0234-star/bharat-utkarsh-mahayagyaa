@@ -2,10 +2,10 @@
   "name": "bharat-utkarsh-mahayagya",
   "version": "1.0.0",
   "private": true,
-  "description": "भारत उत्कर्ष महायज्ञ 2026 registration full-stack website",
+  "description": "भारत उत्कर्ष महायज्ञ 2026 registration website",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "node backend/server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
